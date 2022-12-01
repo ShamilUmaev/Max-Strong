@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body,html {
     min-width: 100%;
     min-height: 100vh;
     font-family: Hellix;
@@ -29,7 +29,6 @@ h2 {
 }
 .content-section-container {
     text-align: center;
-    margin: 0 2rem;
 }
 .content-section-container img {
     width: 100%;
@@ -40,7 +39,7 @@ h2 {
     line-height: 7rem;
     margin: 1.5rem 0;
 }
-.content-section-container p {
+p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #111235;
@@ -54,4 +53,20 @@ h2 {
     border: none;
     font-size: 1.8rem;
     margin: 2rem 0;
+}
+.choose-loads-content {
+    margin: 5rem 0;
+}
+.choose-loads-text-content {
+    text-align: left;
+    background-color: #F2F8FF;
+    padding: 3.5rem 2rem;
+    margin: 3rem 0;
+}
+.choose-loads-text-content h2 {
+    color: #111235;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    width: 90%;
+    margin-bottom: 2rem;
 }
