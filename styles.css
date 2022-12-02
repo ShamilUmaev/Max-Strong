@@ -3,14 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body,html {
+body, html {
     min-width: 100%;
     min-height: 100vh;
     font-family: 'Hellix';
-    background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%);
-}
-html {
     font-size: 62.5%;
+    background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%);
 }
 header {
     height: 7.5rem;
@@ -22,11 +20,15 @@ header {
 h1, h2, h3, h4 p {
     color: #111235;
 }
-h1, h2 {
+h1, h2, li, p {
     font-weight: 500;
 }
 h2 {
     font-size: 3.6rem;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 img {
     width: 100%;
@@ -48,10 +50,6 @@ img {
     font-size: 6.4rem;
     line-height: 7rem;
     margin: 1.5rem 0;
-}
-p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
 }
 .btn {
     width: 25rem;
@@ -138,4 +136,56 @@ p {
 .exercising-benefits-section button {
     display: block;
     margin: 3rem auto;
+}
+.footer-section {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5rem 0 0;
+    margin: 8rem 0 0;
+}
+ul {
+    list-style-type: none;
+    margin: 5.5rem 0;
+}
+ul li {
+    font-size: 1.6rem;
+    margin: 4rem 0;
+}
+.footer-section h5 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+input[type="text"] {
+    width: 65%;
+    border-radius: 8px;
+    border: none;
+    background-image: url('./images/icon-send.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    margin: 2rem 0 3rem;
+}
+.icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.icon-circle {
+    height: 32px;
+    width: 32px;
+    background-color: rgba(128, 173, 245, .2);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-circle > img {
+    width: 60%;
+}
+.footer-section p {
+    font-size: 1.4rem;
+    margin: 8rem 0;
 }
