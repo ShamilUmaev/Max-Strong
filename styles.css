@@ -7,6 +7,7 @@ body,html {
     min-width: 100%;
     min-height: 100vh;
     font-family: 'Hellix';
+    background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%);
 }
 html {
     font-size: 62.5%;
@@ -27,6 +28,9 @@ h1, h2 {
 h2 {
     font-size: 3.6rem;
 }
+img {
+    width: 100%;
+}
 .header-bold {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -35,7 +39,6 @@ h2 {
     text-align: center;
 }
 .time-to-get-strong-section img {
-    width: 100%;
     margin-top: 2rem;
 }
 .time-to-get-strong-text-container {
@@ -66,7 +69,7 @@ p {
     color: #436BAA;
 }
 .choose-loads-section {
-    margin: 5rem 0 10rem;
+    margin: 5rem 0;
 }
 .choose-loads-text-container {
     text-align: left;
@@ -85,6 +88,7 @@ p {
     background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
     text-align: center;
     padding: 8rem 0 0;
+    margin: 12rem 0;
 }
 .trainer-text-container {
     padding: 0 2rem;
@@ -94,12 +98,44 @@ p {
     font-size: 4.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-.trainer-text-container h4 {
+.trainer-text-container h5 {
     font-weight: 500;
     font-size: 1.8rem;
     margin: 2rem 0;
 }
 .trainer-section img {
-    width: 100%;
     margin-bottom: -0.2rem;
+}
+.exercising-benefits-section h2 {
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    margin: 4rem 0;
+    padding-left: 2rem;
+}
+.panel {
+    border-radius: 30px;
+    padding: 6rem 4rem;
+    margin: 2rem;
+}
+.panel h4 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-bottom: 2rem;
+    width: 85%;
+}
+.panel:nth-of-type(1) {
+    background-color: #E4F0FF;
+}
+.panel:nth-of-type(2) {
+    background: rgba(114, 122, 239, 0.1);
+}
+.panel:nth-of-type(3) {
+    background: rgba(114, 122, 239, 0.1);
+}
+.panel:nth-of-type(4) {
+    background-color: #E4F0FF;
+}
+.exercising-benefits-section button {
+    display: block;
+    margin: 3rem auto;
 }
