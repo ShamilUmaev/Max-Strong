@@ -32,9 +32,20 @@ p {
 img {
     width: 100%;
 }
+.desktop-only {
+    display: none;
+}
+.mobile-only {
+    display: block;
+}
 .page-container {
+    width: 100%;
     max-width: 450px;
     min-width: 320px;
+    margin: 0 auto;
+}
+.inner-container { /*additional added*/
+    width: 90%;
     margin: 0 auto;
 }
 .header-bold {
@@ -47,9 +58,9 @@ img {
 .time-to-get-strong-section img {
     margin-top: 2rem;
 }
-.time-to-get-strong-text-container {
+/* .time-to-get-strong-text-container {
     padding: 0 2rem;
-}
+} */
 .time-to-get-strong-text-container h1 {
     font-size: 6.4rem;
     line-height: 7rem;
@@ -76,27 +87,28 @@ img {
 .choose-loads-text-container {
     text-align: left;
     background-color: #F2F8FF;
-    padding: 3.5rem 0 3.5rem 2rem;
+    padding: 5rem 0rem;
     margin: 3rem 0;
 }
 .choose-loads-text-container h2 {
     font-size: 4.8rem;
     line-height: 5.8rem;
-    width: 75%;
+    width: 85%;
     margin-bottom: 2rem;
 }
 .choose-loads-text-container p {
     width: 95%;
 }
 .trainer-section {
+    width: 100%; /*additional added*/
     background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
     text-align: center;
     padding: 6rem 0 0;
     margin: 12rem 0;
 }
-.trainer-text-container {
+/* .trainer-text-container {
     padding: 0 2rem;
-}
+} */
 .trainer-text-container h3 {
     font-weight: 900;
     font-size: 4.5rem;
@@ -114,20 +126,21 @@ img {
     font-size: 4.8rem;
     line-height: 5.8rem;
     margin: 4rem 0;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 .panel {
-    width: 370px;
-    height: 274px;
     border-radius: 30px;
-    padding: 6rem 3.5rem;
-    margin: 2rem;
+    padding: 6rem 3rem;
+    margin-bottom: 2rem;
 }
 .panel h4 {
     font-size: 2.4rem;
     line-height: 2.9rem;
     margin-bottom: 2rem;
-    width: 85%;
+    width: 80%;
+}
+.panel > p {
+    width: 90%;
 }
 .panel:nth-of-type(1) {
     background-color: #E4F0FF;
@@ -163,7 +176,7 @@ ul li {
     font-size: 1.8rem;
 }
 input[type="text"] {
-    width: 65%;
+    width: 250px;
     font-size: 1.4rem;
     border-radius: 8px;
     border: none;
@@ -196,16 +209,12 @@ input[type="text"] {
     font-size: 1.4rem;
     margin: 8rem 0;
 }
-.desktop-only {
-    display: none;
-}
-.mobile-only {
-    display: block;
-}
 @media only screen and (min-width: 992px) {
     
     .page-container {
-        max-width: 1200px;
+        max-width: 100%;
+        /* max-width: 1200px; */
+        /* min-width: 1024px; */
         margin: 0 auto;
     }
     .desktop-only {
@@ -214,7 +223,12 @@ input[type="text"] {
     .mobile-only {
         display: none;
     }
+    .inner-container {
+        width: 80%;
+    }
     header {
+        width: 80%;
+        margin: 0 auto;
         justify-content: space-between;
         box-shadow: none;
     }
@@ -222,13 +236,7 @@ input[type="text"] {
         width: 30%;
         display: flex;
         justify-content: space-between;
-        margin-right: 7rem;
-    }
-    .nav-bar ul {
-        width: 75%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
+        margin-right: 5rem;
     }
     .nav-bar li {
         margin: 0;
@@ -240,8 +248,13 @@ input[type="text"] {
     .time-to-get-strong-section {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .time-to-get-strong-section > img {
+        width: 45%;
     }
     .time-to-get-strong-text-container {
+        width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -251,18 +264,20 @@ input[type="text"] {
     .time-to-get-strong-text-container p {
         width: 85%;
     }
-    .choose-loads-section img {
-        width: 50%;
-    }
     .choose-loads-section {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .choose-loads-section img {
+        width: 45%;
+    }
     .choose-loads-text-container {
         width: 45%;
-        padding: 4rem 5rem;
-        border-radius: 30px;
+        padding: 3rem 3rem 3rem 2rem;
+        border-radius: 50px;
     }
     .trainer-section {
         display: flex;
@@ -272,11 +287,12 @@ input[type="text"] {
     }
     .trainer-section img {
         width: 40%;
-        margin-right: 4rem;
+        margin: 0;
     }
     .trainer-text-container {
         width: 40%;
         text-align: left;
+        margin-left: 6rem;
     }
     .exercising-benefits-header-container {
         display: flex;
@@ -288,25 +304,54 @@ input[type="text"] {
     }
     .exercising-benefits-header-container button {
         margin: 0;
+        text-align: center;
     }
     .exercising-benefits-section {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
         align-items: center;
     }
     .exercising-benefits-section img {
-        width: 35%;
-        /* height: 400px; */
-    }
-    .panel {
-        margin: 0 0 2rem 0;
+        width: 30%;
     }
     .panels {
-        height: 600px;
-        width: 65%;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .panel {
+        width: 45%;
+        margin: 0 2rem 2rem 0;
+    }
+    .panel > h4 {
+        width: 85%;
+    }
+    .footer-section {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .footer-section > ul {
+        width: 30%;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         flex-wrap: wrap;
+        margin: 0;
+    }
+    .footer-section li {
+        margin: 0 0 3rem 0;
+    }
+    .stay-up-to-date {
+        width: 25%;
+        text-align: left;
+    }
+    .footer-section h2 {
+        width: 20%;
+        text-align: left;
+    }
+    p.desktop-only {
+        display: inline-block;
+        margin-bottom: 6rem;
     }
 }
