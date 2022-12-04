@@ -76,14 +76,17 @@ img {
 .choose-loads-text-container {
     text-align: left;
     background-color: #F2F8FF;
-    padding: 3.5rem 2.5rem 3.5rem 2rem;
+    padding: 3.5rem 0 3.5rem 2rem;
     margin: 3rem 0;
 }
 .choose-loads-text-container h2 {
     font-size: 4.8rem;
     line-height: 5.8rem;
-    width: 90%;
+    width: 75%;
     margin-bottom: 2rem;
+}
+.choose-loads-text-container p {
+    width: 95%;
 }
 .trainer-section {
     background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
@@ -198,10 +201,11 @@ input[type="text"] {
 
 @media only screen and (min-width: 992px) {
     body, html {
-        font-size: 75%;
+        font-size: 65%;
     }
     .page-container {
-        max-width: 1400px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     header {
         justify-content: space-between;
@@ -223,8 +227,8 @@ input[type="text"] {
         margin: 0;
     }
     .desktop-only img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     .time-to-get-strong-section {
         display: flex;
@@ -239,5 +243,18 @@ input[type="text"] {
     }
     .time-to-get-strong-text-container p {
         width: 85%;
+    }
+    .choose-loads-section img {
+        width: 50%;
+    }
+    .choose-loads-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .choose-loads-text-container {
+        width: 45%;
+        padding: 4rem 5rem;
+        border-radius: 30px;
     }
 }
