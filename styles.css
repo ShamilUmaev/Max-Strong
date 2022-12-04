@@ -53,15 +53,15 @@ img {
 .time-to-get-strong-text-container h1 {
     font-size: 6.4rem;
     line-height: 7rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 }
 .btn {
-    width: 65%;
+    width: 250px;
     padding: 2rem 0;
     border-radius: 35px;
     border: none;
     font-size: 1.6rem;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
 }
 .btn-primary {
     background-color: #4B5092;
@@ -80,7 +80,6 @@ img {
     margin: 3rem 0;
 }
 .choose-loads-text-container h2 {
-    color: #111235;
     font-size: 4.8rem;
     line-height: 5.8rem;
     width: 90%;
@@ -161,6 +160,7 @@ ul li {
 }
 input[type="text"] {
     width: 65%;
+    font-size: 1.4rem;
     border-radius: 8px;
     border: none;
     background-image: url('./images/icon-send.png');
@@ -168,7 +168,6 @@ input[type="text"] {
     background-position: 95%;
     background-color: #ffffff;
     padding: 1rem 1.5rem;
-    font-size: 1.4rem;
     margin: 2rem 0 3rem;
 }
 .icons {
@@ -192,4 +191,53 @@ input[type="text"] {
 .footer-section p {
     font-size: 1.4rem;
     margin: 8rem 0;
+}
+.desktop-only {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    body, html {
+        font-size: 75%;
+    }
+    .page-container {
+        max-width: 1400px;
+    }
+    header {
+        justify-content: space-between;
+        box-shadow: none;
+    }
+    .desktop-only {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 7rem;
+    }
+    .desktop-only ul {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .desktop-only li {
+        margin: 0;
+    }
+    .desktop-only img {
+        width: 25px;
+        height: 25px;
+    }
+    .time-to-get-strong-section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .time-to-get-strong-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+    }
+    .time-to-get-strong-text-container p {
+        width: 85%;
+    }
 }
