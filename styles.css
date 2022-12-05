@@ -44,7 +44,7 @@ img {
     min-width: 320px;
     margin: 0 auto;
 }
-.inner-container { /*additional added*/
+.inner-container {
     width: 90%;
     margin: 0 auto;
 }
@@ -58,9 +58,6 @@ img {
 .time-to-get-strong-section img {
     margin-top: 2rem;
 }
-/* .time-to-get-strong-text-container {
-    padding: 0 2rem;
-} */
 .time-to-get-strong-text-container h1 {
     font-size: 6.4rem;
     line-height: 7rem;
@@ -100,15 +97,12 @@ img {
     width: 95%;
 }
 .trainer-section {
-    width: 100%; /*additional added*/
+    width: 100%;
     background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
     text-align: center;
     padding: 6rem 0 0;
     margin: 12rem 0;
 }
-/* .trainer-text-container {
-    padding: 0 2rem;
-} */
 .trainer-text-container h3 {
     font-weight: 900;
     font-size: 4.5rem;
@@ -126,7 +120,6 @@ img {
     font-size: 4.8rem;
     line-height: 5.8rem;
     margin: 4rem 0;
-    /* padding-left: 2rem; */
 }
 .panel {
     border-radius: 30px;
@@ -213,8 +206,6 @@ input[type="text"] {
     
     .page-container {
         max-width: 100%;
-        /* max-width: 1200px; */
-        /* min-width: 1024px; */
         margin: 0 auto;
     }
     .desktop-only {
