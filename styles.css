@@ -205,7 +205,7 @@ input[type="text"] {
 @media only screen and (min-width: 992px) {
     
     .page-container {
-        max-width: 100%;
+        /* width: 100%; */
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -241,6 +241,7 @@ input[type="text"] {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
     }
     .time-to-get-strong-section > img {
         width: 45%;
