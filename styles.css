@@ -40,8 +40,8 @@ img {
 }
 .page-container {
     width: 100%;
-    max-width: 450px;
-    min-width: 320px;
+    max-width: 768px;
+    min-width: 375px;
     margin: 0 auto;
 }
 .inner-container {
@@ -59,8 +59,7 @@ img {
     margin-top: 2rem;
 }
 .time-to-get-strong-text-container h1 {
-    font-size: 6.4rem;
-    line-height: 7rem;
+    font-size: 5rem;
     margin: 2rem 0;
 }
 .btn {
@@ -88,8 +87,7 @@ img {
     margin: 3rem 0;
 }
 .choose-loads-text-container h2 {
-    font-size: 4.8rem;
-    line-height: 5.8rem;
+    font-size: 4rem;
     width: 85%;
     margin-bottom: 2rem;
 }
@@ -203,10 +201,11 @@ input[type="text"] {
     margin: 8rem 0;
 }
 @media only screen and (min-width: 992px) {
-    
+    header {
+        height: 100px;
+    }
     .page-container {
-        /* width: 100%; */
-        max-width: 1440px;
+        max-width: 1920px;
         margin: 0 auto;
     }
     .desktop-only {
@@ -225,13 +224,14 @@ input[type="text"] {
         box-shadow: none;
     }
     .nav-bar {
-        width: 30%;
+        width: 35%;
         display: flex;
         justify-content: space-between;
         margin-right: 5rem;
     }
     .nav-bar li {
         margin: 0;
+        font-size: 1.8rem;
     }
     header img {
         width: 20px;
@@ -242,6 +242,7 @@ input[type="text"] {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        padding-top: 10rem;
     }
     .time-to-get-strong-section > img {
         width: 45%;
@@ -264,28 +265,41 @@ input[type="text"] {
         justify-content: space-between;
         align-items: center;
     }
+    .choose-loads-section .inner-container {
+        width: 100%;
+    }
     .choose-loads-section img {
         width: 45%;
     }
     .choose-loads-text-container {
         width: 45%;
-        padding: 3rem 3rem 3rem 2rem;
+        padding: 3rem;
         border-radius: 50px;
     }
+    .choose-loads-text-container h2 {
+        width: 100%;
+    }
     .trainer-section {
+        width: 80%;
+        margin: 12rem auto;
+    }
+    .trainer-section .wrapper {
+        width: 90%;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .trainer-section img {
-        width: 40%;
+        width: 45%;
         margin: 0;
     }
     .trainer-text-container {
-        width: 40%;
+        width: 45%;
         text-align: left;
-        margin-left: 6rem;
+    }
+    .trainer-text-container h3 {
+        font-size: 3.5rem;
     }
     .exercising-benefits-header-container {
         display: flex;
@@ -315,9 +329,14 @@ input[type="text"] {
     .panel {
         width: 45%;
         margin: 0 2rem 2rem 0;
+        padding: 2.5rem 2rem;
     }
     .panel > h4 {
-        width: 85%;
+        width: 100%;
+        line-height: 1.4;
+        font-size: 2rem;
+        height: 56px;
+        margin-bottom: 1rem;
     }
     .footer-section {
         display: flex;
@@ -346,5 +365,93 @@ input[type="text"] {
     p.desktop-only {
         display: inline-block;
         margin-bottom: 6rem;
+    }
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1250px) {
+    p {
+        font-size: 1.8rem;
+    }
+    .header h2 {
+        font-size: 4rem;
+    }
+    .nav-bar li {
+        font-size: 2rem;
+    }
+    .time-to-get-strong-section {
+        padding-top: 5rem;
+    }
+    .time-to-get-strong-text-container h1 {
+        font-size: 6rem;
+    }
+    .choose-loads-text-container {
+        padding: 3.5rem;
+    }
+    .choose-loads-text-container h2 {
+        font-size: 6rem;
+    }
+    .trainer-text-container h3 {
+        font-size: 4rem;
+    }
+    .exercising-benefits-header-container h2 {
+        font-size: 4rem;
+    }
+    .panel {
+        padding: 3rem 2.5rem;
+    }
+    .panel > h4 {
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    p {
+        font-size: 1.8rem;
+    }
+    .time-to-get-strong-section {
+        padding-top: 4rem;
+    }
+    .time-to-get-strong-text-container {
+        max-width: 660px;
+    }
+    .time-to-get-strong-text-container h1 {
+        font-size: 7rem;
+    }
+    .choose-loads-text-container {
+        padding: 4rem;
+    }
+    .choose-loads-text-container h2 {
+        max-width: 340px;
+    }
+    .choose-loads-text-container p {
+        max-width: 475px;
+    }
+    .trainer-section .wrapper {
+        width: 80%;
+    }
+    .trainer-text-container h3 {
+        font-size: 5rem;
+    }
+    .trainer-text-container {
+        max-width: 550px;
+    }
+    .exercising-benefits-header-container {
+        margin-bottom: 7rem;
+    }
+    .exercising-benefits-header-container h2 {
+        font-size: 4.5rem;
+    }
+    .panel {
+        padding: 3.5rem 3rem;
+    }
+    .panel > h4 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+        max-width: 252px;
+    }
+    .panel p {
+        max-width: 310px;
     }
 }
